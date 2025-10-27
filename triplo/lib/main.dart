@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:triplo/pages/registration_page/registration_page.dart';
 import 'firebase_options.dart';
 import '/pages/login_page/LoginPage.dart';
 
@@ -39,7 +40,23 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       //home: const MyHomePage(title: 'Home'),
-      home: LoginPage(),
+      initialRoute: '/login',
+
+
+
+
+
+
+
+
+
+
+
+        routes: {
+        '/login' : (context) => LoginPage(),
+        '/registration' : (context) => RegistrationPage(),
+
+    },
     );
   }
 }

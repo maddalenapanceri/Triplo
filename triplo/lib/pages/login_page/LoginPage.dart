@@ -146,7 +146,7 @@ class LoginPage extends StatelessWidget {
 
                 TextButton(
                   onPressed: () {
-                    //apri pagina di registrazione
+                    Navigator.pushNamed(b, '/registration');
                     ScaffoldMessenger.of(b).showSnackBar(
                       const SnackBar(content: Text('Sign-up'))
                     );
